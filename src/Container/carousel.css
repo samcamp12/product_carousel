@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+/* the pictures gallery */
+.container {
+    position: relative; 
+    right: 0;
+    display: flex;
+    margin-left: 0;
+    transition: all 0.2s ease;
+}
+
+/* the entire container */
+
+.section-box {
+    width: 1200px;
+    height: 550px;  
+    align-items: center;
+    position: relative;
+    margin: 100px;
+    border: 1px solid;
+    border-color: rgb(200, 200, 200); 
+    padding-top: 2rem;
+    background: #F8F8FF;
+}
+
+/* the window that displays certain imgs*/
+.img-window {
+    margin-left: 110px;
+    width: 976px;
+    height: 370px;
+    overflow: hidden;
+    background: white;
+}
+
+/* next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -70px;
+    padding: 16px;
+    color: #5F9EA0;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+
+  /* position the next button */
+  .next {
+    right: 115px;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  /* on hover, add a dark background color */
+  .prev:hover, .next:hover {
+    background-color: rgba(17, 17, 17, 0.8);
+  }
+
+  .section-box span {
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+        background: #C0C0C0;
+        border-radius: 50%;
+        font-size: 36px;
+        margin: 0.5rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  }
+  /* dot on hover  */
+  .section-box span:hover{
+    background-color: #717171;
+  }
+  /* dot active */
+   .section-box .active {
+    background-color: #717171;
+  }
+  /* responsive design */
+  @media (max-width: 700px) {
+    .picture-container {
+        width: 180px;
+        height: 270px;
+    }
+      
+    img {
+        width: 150px;
+        height: 220px;
+    }
+
+    .img-window {
+        margin-left: 20px;
+        width: 600px;
+        height: 270px;
+    }
+
+    .section-box {
+        width: 700px;
+        height: 450px;  
+        margin-left: 5px;
+    }
+
+    .next {
+        right: 330px;
+      }
+  }
+
+
+
+

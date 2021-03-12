@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.picture-container {
+    width: 244px;
+    height: 370px;
+    padding: 1rem;
+    border: 1px solid;
+    border-color: rgb(200, 200, 200);
+}
+
+
+
+img {
+    width: 210px;
+    height: 280px;
+}
